@@ -1,0 +1,43 @@
+#canvas {
+    background-image: "./../images/FONDO.jpg";
+}
+
+body {
+background: rgb(126,195,34);
+background: linear-gradient(0deg, rgba(126,195,34,1) 0%, rgba(45,122,253,1) 100%);
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    justify-content: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    }
+
+#arrow-keys {
+    width: 70px;
+    height: 70px;
+    position: static;
+}
+
+h4 {
+    color: blue;
+    justify-content: center;
+}    
+
+h5 {
+    color: green;
+    justify-content: center;
+    }
+
+p {
+    color: grey;
+    justify-content: center;
+}
