@@ -3,8 +3,11 @@
 }
 
 body {
-background: rgb(126,195,34);
-background: linear-gradient(0deg, rgba(126,195,34,1) 0%, rgba(45,122,253,1) 100%);
+background-color:#BAE0CC;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .btn-group-lg>.btn, .btn-lg {
@@ -21,14 +24,13 @@ background: linear-gradient(0deg, rgba(126,195,34,1) 0%, rgba(45,122,253,1) 100%
     border-color: #007bff;
     }
 
-#arrow-keys {
-    width: 70px;
-    height: 70px;
-    position: static;
+img {
+    width: 150px;
+    height: 150px;
 }
 
 h4 {
-    color: blue;
+    color: #356168;
     justify-content: center;
 }    
 
@@ -38,6 +40,6 @@ h5 {
     }
 
 p {
-    color: grey;
+    color: #1F3134;
     justify-content: center;
 }
