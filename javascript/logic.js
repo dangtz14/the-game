@@ -21,7 +21,6 @@ function startGame() {
     playing = true;
 }
 
-
 class Background {
     constructor () {
         this.x = 0;
@@ -49,7 +48,7 @@ class Status {
 }
 draw() {
     ctx.drawImage(this.img, this.x, this.y, this.width, this.height)
-}
+    }
 }
 
 // LUIGI
@@ -100,25 +99,25 @@ switch (e.keyCode) {
         if (luigi.y < 0) {
             return false
         }
-        luigi.y -= luigi.speed * 9;        
+        luigi.y -= luigi.speed * 14;        
         break;
         case 40:
             if (luigi.y + luigi.height > canvas.height) {
                 return false
             }
-        luigi.y += luigi.speed * 9;
+        luigi.y += luigi.speed * 14;
         break;
         case 37:
             if (luigi.x < 0) {
                 return false
             }
-        luigi.x -= luigi.speed * 9;
+        luigi.x -= luigi.speed * 14;
         break;
         case 39:
             if (luigi.x + luigi.width > canvas.width) {
                 return false
             }
-        luigi.x += luigi.speed * 9;
+        luigi.x += luigi.speed * 14;
         break;
     default:
         break;
@@ -137,10 +136,9 @@ updateGame = () => {
     generateApples()
     drawApples()
     score()
-    if (points >= 100) {
+    if (points >= 400) {
         isWin=true
         requestID=undefined
-        //letreroGano.drwa
     }
    
     if (!requestID) {
@@ -150,9 +148,6 @@ updateGame = () => {
     }else{
         requestID = requestAnimationFrame(updateGame);
     }
-
-    
-
 }
 
 // FUNCIÓN PARA GENERAR MUCHAS MANZANAS
@@ -181,8 +176,7 @@ gameOver = () => {
 
   
     console.log(isWin ? "You won!" : "Game Over")
-    letrero.draw();
-    
+    letrero.draw();    
 }
 
 // SCORE
